@@ -1,7 +1,7 @@
 workshop-aws-beanstalk
 ======================
 
-Tech Event Beanstalk
+Tech Event Amazon AWS Beanstalk
 
 =======
 
