@@ -1,33 +1,53 @@
 workshop-aws-beanstalk
 ======================
 
-TODO:
-
-Documentation jekyll based
+Tech Event Beanstalk
 
 =======
 
-Tech Event Beanstalk
+TASKS:
 
--> Créer 2 applications (prod/qa)
--> Deployment PRD
-	-> Deploy new version on UAT for testing
-	-> Validation of new version
-	-> Swap envt URL PRD/UAT (Envt ISO)
--> Edit configuration
-	-> Variable d'environnement (Datasource/user/pswd)
-	-> CreateEnvironmentRequest (AWS API)
--> Monitoring (accesslog)
-	-> SSH conection on Tomcat instance
-	-> Enable logfile rotation (logrotate)
--> Création à partir de CloudFormation
-	-> JSON -> Teamplate
+- Pusher la web-app Petclinic CloudBees sur le repository (JLR)
+- Envoyer PDF Continuous Delivery (JLR)
+- Création de la branche Jekyll (EBR)
+- Relancer Amazon pour l'atelier (JLR)
+- Génération des comptes (EBR)
 
-#0 Configuration d'une Base de données mutualisée
-	-> Déclaration de la datasource avec les variables d'environnements
+=======
 
+GUIDELINE:
 
-#1 Création de l'application avec l'interface
-#2 Création à partir du SDK
-#3 Switch UAT/PRD
-#4 Monitoring
+- Display workshop schedule at the beginning
+- Teasing for Blue/Green deployment/continuous delivery principles
+- Step by step (tutorial-like)
+
+=======
+
+WORKSHOP STEPS:
+
+#0 Workshop environment set-up (JLR)
+ - Git (GitHub client)
+ - Amazon account
+ - Wiki page generation (with Jekyll)
+
+#1 Deploy a webapp (pet-clinic) (JBC)
+ - Configure and deploy from UI
+ - Set-up environment properties (VAR_1, VAR_2)
+ - Using of "server.xml" in a AWS dedicated folder
+
+#2 Utilisation du SDK (GEG)
+ - SDK
+ - Advanced set-up avancé (Datasource)
+ - Infra as Code (stand-by)
+
+#3 CloudFormation (EBR)
+ - Export JSON
+ - Create/edit Template
+
+#4 Blue/Green Deployment (JLR)
+ - Create 2 ISO-environments (QA/PROD)
+ - URL switch
+
+#5 Monitoring & Elasticité (?)
+ - ELB Monitoring
+ - Stress test with Gatling (elastic cloud)
