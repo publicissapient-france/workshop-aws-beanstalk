@@ -3,9 +3,8 @@ workshop-aws-beanstalk
 
 Tech Event Amazon AWS Beanstalk
 
-=======
-
 TASKS:
+=======
 
 - Pusher la web-app Petclinic CloudBees sur le repository (JLR)
 - Envoyer PDF Continuous Delivery (JLR)
