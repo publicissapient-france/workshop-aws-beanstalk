@@ -26,25 +26,20 @@ WORKSHOP STEPS:
 ** Git (GitHub client)
 ** Amazon account
 ** Wiki page generation (with Jekyll)
-
 # Deploy a webapp (pet-clinic) (JBC)
 ** Configure and deploy from UI
 ** Set-up environment properties (VAR_1, VAR_2)
 ** Using of "server.xml" in a AWS dedicated folder
-
 # Utilisation du SDK (GEG)
 ** SDK
 ** Advanced set-up avancé (Datasource)
 ** Infra as Code (stand-by)
-
 # CloudFormation (EBR)
 ** Export JSON*
 ** Create/edit*Template
-
 # Blue/Green Deployment (JLR)
 ** Create 2 ISO-environments (QA/PROD)
 ** URL switch
-
 # Monitoring & Elasticité (?)
 ** ELB Monitoring
 ** Stress test with Gatling (elastic cloud)
