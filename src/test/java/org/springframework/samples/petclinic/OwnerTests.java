@@ -16,7 +16,7 @@ public class OwnerTests {
 	public void testHasPet() {
 		Owner owner = new Owner();
 		Pet fido = new Pet();
-		fido.setName("Rex"); // should be "Fido"!
+		fido.setName("Fido");
 		assertNull(owner.getPet("Fido"));
 		assertNull(owner.getPet("fido"));
 		owner.addPet(fido);
