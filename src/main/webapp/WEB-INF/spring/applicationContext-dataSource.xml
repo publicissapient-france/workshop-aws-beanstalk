@@ -17,16 +17,23 @@
 
 	<!-- Configurer that replaces ${...} placeholders with values from a properties file -->
 	<!-- (in this case, JDBC-related settings for the dataSource definition below) -->
-	<context:property-placeholder location="classpath:jdbc.properties"/>
+	<context:property-placeholder location="classpath:jdbc.properties" system-properties-mode="OVERRIDE"/>
+
 	
 	<!-- JNDI DataSource for JEE environments -->
-	<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/petclinic"/>
+	<!--<jee:jndi-lookup id="datasource" jndi-name="java:comp/env/jdbc/petclinic"/>-->
+    <bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="${JDBC_CONNECTION_STRING}"/>
+        <!--<property name="username" value="root"/>-->
+        <!--<property name="password" value=""/>-->
+    </bean>
 
 	<!-- Database initializer. If any of the script fails, the initialization stops. -->
 	<!-- As an alternative, for embedded databases see <jdbc:embedded-database/>. -->
-	<jdbc:initialize-database data-source="dataSource">
-		<jdbc:script location="${jdbc.initLocation}"/>
-		<jdbc:script location="${jdbc.dataLocation}"/>
-	</jdbc:initialize-database>
+	<!--<jdbc:initialize-database data-source="dataSource">-->
+		<!--<jdbc:script location="${jdbc.initLocation}"/>-->
+		<!--<jdbc:script location="${jdbc.dataLocation}"/>-->
+	<!--</jdbc:initialize-database>-->
 
 </beans>

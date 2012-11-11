@@ -18,7 +18,7 @@
 
 	<!-- Transaction manager for a single JDBC DataSource (alternative to JTA) -->
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
-			p:dataSource-ref="dataSource"/>
+	        p:dataSource-ref="datasource"/>
 
 	<!-- Transaction manager that delegates to JTA (for a transactional JNDI DataSource) -->
 	<!--
