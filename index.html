@@ -1,37 +1,94 @@
-<!DOCTYPE html>
-<html>
+---
+layout: main
+---
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Workshop AWS Beanstalk" />
+<< Insert Global view of the workshop here >>
+ 
+<ul>
+  <li><a href="groups/io.html">Io group</a>
+  <li><a href="groups/europa.html">Europa group</a>
+  <li><a href="groups/ganymede.html">Ganymed group</a>
+  <li><a href="groups/callisto.html">Callisto group</a>
+  <li><a href="groups/amalthea.html">Amalthea group</a>
+  <li><a href="groups/himalia.html">Himalia group</a>
+  <li><a href="groups/elara.html">Elara group</a>
+  <li><a href="groups/pasiphae.html">Pasiphaë group</a>
+  <li><a href="groups/sinope.html">Sinope group</a>
+  <li><a href="groups/lysithea.html">Lysithea group</a>
+  <li><a href="groups/carme.html">Carme group</a>
+  <li><a href="groups/ananke.html">Ananke group</a>
+  <li><a href="groups/leda.html">Leda group</a>
+  <li><a href="groups/thebe.html">Thebe group</a>
+  <li><a href="groups/adrastea.html">Adrastea group</a>
+  <li><a href="groups/metis.html">Metis group</a>
+  <li><a href="groups/callirrhoe.html">Callirrhoe group</a>
+  <li><a href="groups/themisto.html">Themisto group</a>
+  <li><a href="groups/megaclite.html">Megaclite group</a>
+  <li><a href="groups/taygete.html">Taygete group</a>
+  <li><a href="groups/chaldene.html">Chaldene group</a>
+  <li><a href="groups/harpalyke.html">Harpalyke group</a>
+  <li><a href="groups/kalyke.html">Kalyke group</a>
+  <li><a href="groups/iocaste.html">Iocaste group</a>
+  <li><a href="groups/erinome.html">Erinome group</a>
+  <li><a href="groups/isonoe.html">Isonoe group</a>
+  <li><a href="groups/praxidike.html">Praxidike group</a>
+  <li><a href="groups/autonoe.html">Autonoe group</a>
+  <li><a href="groups/thyone.html">Thyone group</a>
+  <li><a href="groups/hermippe.html">Hermippe group</a>
+</ul>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+ 
+<h3>Tech Event Amazon AWS Beanstalk</h3>
+<h4>TASKS:</h4>
+<ul>
+  <li><s>Pusher la web-app Petclinic CloudBees sur le repository (JLR)</s><span style="color: green; font-weight: bold;"> DONE</green>
+  <li><s>Envoyer PDF Continuous Delivery (JLR)</s><span style="color: green; font-weight: bold;"> DONE</green>
+  <li><s>Création de la branche Jekyll (EBR)</s><span style="color: green; font-weight: bold;"> DONE</green>
+  <li>Relancer Amazon pour l'atelier (JLR)
+  <li>Génération des comptes (EBR)
+</ul>
+<h4>GUIDELINE:</h4>
+<ul>
+  <li>Display workshop schedule at the beginning
+  <li>Teasing for Blue/Green deployment/continuous delivery principles
+  <li>Step by step (tutorial-like)
+</ul>
+<h4>WORKSHOP STEPS:</h4>
+<h5>Workshop environment set-up (JLR)</h5>
+<ul>
+  <li>Git (GitHub client)
+  <li>Amazon account
+  <li>Wiki page generation (with Jekyll)
+</ul>
+<h5>Deploy a webapp (pet-clinic) (JBC)</h5>
+<ul>
+  <li>Configure and deploy from UI
+  <li>Set-up environment properties (VAR_1, VAR_2)
+  <li>Using of "server.xml" in a AWS dedicated folder
+</ul>
+<h5>Utilisation du SDK (GEG)</h5>
+<ul>
+  <li>SDK
+  <li>Advanced set-up avancé (Datasource)
+  <li>Infra as Code (stand-by)
+</ul>
+<h5>CloudFormation (EBR)</h5>
+<ul>
+  <li>Export JSON
+  <li>Create/edit Template
+</ul>
+<h5>Blue/Green Deployment (JLR)</h5>
+<ul>
+  <li>Create 2 ISO-environments (QA/PROD)
+  <li>URL switch
+</ul>
+<h5>Monitoring & Elasticité (?)</h5>
+<ul>
+  <li>ELB Monitoring
+  <li>Stress test with Gatling (elastic cloud)
+</ul>
 
-    <title>Workshop AWS Beanstalk</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/xebia-france/workshop-aws-beanstalk">View on GitHub</a>
-
-          <h1 id="project_title">Workshop AWS Beanstalk</h1>
-          <h2 id="project_tagline">Learn to use Beanstalk the easy way!</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/xebia-france/workshop-aws-beanstalk/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/xebia-france/workshop-aws-beanstalk/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+        
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
@@ -57,18 +114,3 @@ $ git checkout gh-pages
 <h3>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Workshop AWS Beanstalk by <a href="http://www.xebia.fr">Xebia</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-
-
-  </body>
-</html>
