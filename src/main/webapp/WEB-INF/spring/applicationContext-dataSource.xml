@@ -24,9 +24,9 @@
 	<!--<jee:jndi-lookup id="datasource" jndi-name="java:comp/env/jdbc/petclinic"/>-->
     <bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://${RDS_HOSTNAME}:${RDS_PORT}/petclinic"/>
-        <property name="username" value="${RDS_USERNAME}"/>
-        <property name="password" value="${RDS_PASSWORD}"/>
+        <property name="url" value="${JDBC_CONNECTION_STRING}"/>
+        <!--<property name="username" value="root"/>-->
+        <!--<property name="password" value=""/>-->
     </bean>
 
 	<!-- Database initializer. If any of the script fails, the initialization stops. -->
